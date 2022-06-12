@@ -9,11 +9,6 @@ client = commands.Bot(command_prefix='h.')
 async def on_ready():
     print('We have logged in as {0.user}'.format(client))
 
-@client.command()
-async def sus(ctx, arg):
-    print(ctx.author)
-    print(ctx.message)
-    print(ctx.guild)
 
 @client.command()
 async def play(ctx, url : str, channel):
